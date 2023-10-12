@@ -7,6 +7,10 @@ const SingleItem = ({ item, removeItem }) => {
 		setIsChecked(!isChecked);
 	};
 
+	const handleRemoveItem = () => {
+		removeItem(item.id);
+	};
+
 	return (
 		<div className='single-item'>
 			<input
@@ -21,7 +25,9 @@ const SingleItem = ({ item, removeItem }) => {
 				}}>
 				{item.name}
 			</p>
-			<button className='btn remove-btn'>delete</button>
+			<button className='btn remove-btn' onClick={handleRemoveItem}>
+				remove
+			</button>
 		</div>
 	);
 };
