@@ -13,7 +13,7 @@ Grocery Bud is a simple web application built with React that helps you create a
 
 ## Demo
 
-You can try Grocery Bud here: [Grocery Bud Demo](https://your-demo-link-here)
+You can try Grocery Bud here: [Grocery Bud Demo](https://grocery-bud-b5ue.onrender.com)
 
 ## Usage
 
