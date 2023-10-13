@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Form = ({ addItem }) => {
 	const [newItemName, setNewItemName] = useState('');
@@ -6,6 +7,7 @@ const Form = ({ addItem }) => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		if (!newItemName) {
+            toast.error('please enter an item name');
 			return;
 		}
 		addItem(newItemName);
